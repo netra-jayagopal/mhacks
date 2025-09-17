@@ -1,25 +1,104 @@
+
+![Logo](https://i.imgur.com/mhmHpTX.png)
+# CampusCloset
+
+CampusCloset is a mobile app that allows college students to buy and sell secondhand collegiate apparel. It provides a platform for students to browse listings, filter results, add items to their cart, and sell their own clothes, making it easier and more affordable to find tailgating clothing while promoting sustainability.
+
+
+
+
+## Table of Contents
+
+    1. Installation
+    2. Features
+    3. Architecture Diagram
+    4. Usage examples
+    5. FAQ
+    6. More links
+    7. Credits
+
+
 ## Installation
-First install the necessary packages by running npm install in terminal. Then, run the app by calling command npx expo start. If it doesn't work, try npx expo start --tunnel
 
-## Inspiration
-Students love finding and wearing cute school spirit, especially at games or tailgates. However, tailgating clothes specific to a college are quite hard to find, especially at a reasonable price or secondhand. We created a platform that makes it easy for students of a particular campus to trade and pass down their school spirit, building the community and helping the planet in the process.
+Install CampusCloset with npm
 
-## What it does
-A student creates and logs in with their account info to be taken to an interface of four pages. The first is a home page, where they can scroll through other listings and filter results based on their preferences. The second is a cart they can add to once they discover pieces they like. The third is a profile page, where they can access their information as well as pieces they've previously bought, listed, or sold. The fourth is a seller's page, where they can upload a picture and other information to be listed to other students. 
+```bash
+# Clone the repo
+git clone https://github.com/rachllee/mhacks.git
+cd mhacks
+cd CampusCloset
 
-## How we built it
-Most of our work was built with React Native. A Firebase database stores account and item information and links relevant data to the specific user.
+# Install dependencies
+npm install
 
-## Challenges we ran into
-1. Servers. We ran into trouble in hosting them both locally and on Google Cloud, which resulted in a significant setback for the incorporation of our various API's.
-2. Storing images. Storing user input for images in a database was surprisingly more complicated than expected. We first attempted to use Firebase's built in storage feature, but couldn't find a way to link the image with the rest of the item data. We then attempted to encode the user's image into a Base64, then decode it on the homepage. Unfortunately, the built in method for encoding an image failed to produce a valid encoding.
-   
-## Accomplishments that we're proud of
-Pretty frontend and color schemes, a fully functioning and fully integrated database, ability to list items and add items to cart, individual users and unique logins, and more
+# Start the app (with Expo)
+npx expo start
 
-## What we learned
-Mobile is hard
+# Download Expo Go
+# Scan QR code to load app
+```
 
-## What's next for CampusCloset
-AI feature that automatically tags pictures with their attributes, location filtering to find the closest listings to a user, filtering based on item attribute, and more!
+    
+## Installation Demos
+![Demo](https://i.imgur.com/8zCa6Fd.gif)
+![Demo](https://i.imgur.com/ynegjyU.gif)e
+
+
+
+
+## Features
+
+- **Image-based product listings**
+    - Browse collegiate apparel through clear, photographed listings
+- **Search and filter by tags**
+    - Quickly filter items by university, category, size, etc.
+- **Shopping cart and checkout**
+    - Add items to your cart and complete purchases
+- **User authentication**
+    - Secure sign up and login for both buyers and sellers
+- **Upload product listings**
+    - Sellers can easily post and tag new items with image and details
+
+
+## Architecture Diagram
+
+![Demo](https://i.imgur.com/3QeQ6uf.png)
+
+
+## Usage Examples
+
+![App Screenshot](https://i.imgur.com/lpaLQy7.jpeg)
+![App Screenshot](https://i.imgur.com/TJYwWmG.jpeg)
+![App Screenshot](https://i.imgur.com/txtlPPG.jpeg)
+![App Screenshot](https://i.imgur.com/GUpO9qN.jpeg)
+
+
+## FAQ
+
+#### How do I list an item for sale?
+
+Go to the SellScreen. There, you can upload photos, add a description, select appropriate tags, define the price, size, and university all directly in the app.
+
+#### Who can use CampusCloset?
+
+Anyone! The app is designed for those who are looking to buy and sell secondhand collegiate apparel.
+
+#### What technologies did you use to build this app?
+
+CampusCloset was built with React Native for the mobile interface and Firebase for authentication, database, and storage.
+
+#### How does search work?
+
+Items are tagged by sellers, and buyers can filter by categories such as size, type, or university to find what they are looking for.
+
+## Credits
+
+- [@risha-narayanan](https://github.com/risha-narayanan)
+- [@rachllee](https://github.com/rachllee)
+- [@ashleymyan](https://github.com/ashleymyan)
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
 
